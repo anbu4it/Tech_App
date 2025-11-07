@@ -1,0 +1,17 @@
+[33mcommit c2a440665879b85e7b2c2de543ff10bdd2890f93[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Anbu <anbu4it@gmail.com>
+Date:   Fri Nov 7 12:22:08 2025 +0530
+
+    Save local changes before pull
+
+[33mcommit 369af68c0c0fa9f124b8a20070ac744b7577654b[m
+Author: Anbu <anbu4it@gmail.com>
+Date:   Fri Nov 7 12:02:29 2025 +0530
+
+    Initial commit: Flask app with tech news, jobs, and like/share functionality
+
+[33mcommit eb1002e2cd27f3ce24c501e288f9f35c70987a6d[m
+Author: anbu4it <120353313+anbu4it@users.noreply.github.com>
+Date:   Fri Nov 7 11:57:22 2025 +0530
+
+    Initial commit
