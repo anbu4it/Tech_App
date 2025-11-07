@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 import requests
 import xml.etree.ElementTree as ET
+import os
 
 app = Flask(__name__)
 
@@ -65,7 +66,6 @@ def index():
     news = fetch_tech_news()
     jobs = fetch_tech_jobs()
 
-    # Add current like count to each item
     for item in news:
         item['likes'] = likes_count.get(item['url'], 0)
     for job in jobs:
@@ -87,5 +87,7 @@ def like_toggle():
         return jsonify({'success': True, 'likes': likes_count[url]})
     return jsonify({'success': False}), 400
 
+# 🔹 Render requires host=0.0.0.0 and port from env
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
